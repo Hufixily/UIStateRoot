@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: cb5e458e57fdd034c8e44df142214671
+timeCreated: 1546668194
+licenseType: Pro
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: DFYuanW7-GBK
+  fontNames:
+  - DFYuanW7-GBK
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
