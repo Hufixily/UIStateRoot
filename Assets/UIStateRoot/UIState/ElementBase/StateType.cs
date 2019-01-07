@@ -6,7 +6,12 @@ namespace game
     public enum Type
     {
         Go,
+        Pos,
+        Rotate,
+        Scale,
 
+        UPos,
+        UAnchors,
         UImage,
         UText,
         UTextFont,
@@ -14,14 +19,11 @@ namespace game
         UWidth,
         UHeight,
         UColor,
-        UMaterial,
+        //UMaterial,
         UGradient,
 
         CanvasGroup, // 透明组件
 
-        Pos,
-        Rotate,
-        Scale,
         StateRoot,
         PlayAnim,
 

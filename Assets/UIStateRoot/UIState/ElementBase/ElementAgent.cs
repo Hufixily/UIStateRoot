@@ -68,14 +68,16 @@ namespace game
         static public bool ShowVector3(ref Vector3 v3, string name)
         {
             var v = UnityEditor.EditorGUILayout.Vector3Field(name, v3);
-            if (v3 == v)
-                return false;
+            if (v3 == v) return false;
+            RegisterUndo<Vector3>((ref Vector3 vv) => { vv = v; }, ref v3);
+            return true;
+        }
 
-            RegisterUndo<Vector3>((ref Vector3 vv) =>
-            {
-                vv = v;
-            }, ref v3);
-
+        static public bool ShowVector2(ref Vector2  v2,string name)
+        {
+            var v = UnityEditor.EditorGUILayout.Vector2Field(name, v2);
+            if (v2 == v) return false;
+            RegisterUndo<Vector2>((ref Vector2 vv) => vv = v, ref v2);
             return true;
         }
 

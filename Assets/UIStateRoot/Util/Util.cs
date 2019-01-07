@@ -1,6 +1,21 @@
-﻿
-namespace game
+﻿namespace game
 {
+    public class Str2Enum
+    {
+        public static T To<T>(string str, T def)
+        {
+            try
+            {
+                def = (T)System.Enum.Parse(typeof(T), str, true);
+            }
+            catch (System.Exception)
+            {
+
+            }
+            return def;
+        }
+    }
+
     public class Pair<T1, T2>
     {
         public T1 first;

@@ -33,7 +33,7 @@ namespace game
         public override bool ShowState(Element element, ElementStateData sc, int index)
         {
             var old = sc.intValue;
-            var str = EditorGUILayout.TextField("AnimName", sc.strValue);
+            var str = EditorGUILayout.TextField("Name", sc.strValue);
 
             if (GUI.changed)
                 RegisterUndo(() => { sc.strValue = str; });

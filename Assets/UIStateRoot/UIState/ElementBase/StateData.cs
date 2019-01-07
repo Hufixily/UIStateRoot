@@ -13,6 +13,9 @@ namespace game
         public bool isEnable = false;
         public int intValue = 0;
         public Vector3 vector3 = Vector3.zero;
+        public Vector2 vector2Min = Vector2.zero;
+        public Vector2 vector2Max = Vector2.zero;
+
         public Color32 color32;
         public string strValue = string.Empty;
         public Object obj = null;
